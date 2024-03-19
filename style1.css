@@ -1,0 +1,475 @@
+
+@font-face {
+    font-family: myFontBold;
+    src: url(NetflixFont.woff2);
+  }
+  
+  @font-face {
+    font-family: myFontLight;
+    src: url(NetflixSans-Regular.woff2);
+  }
+  
+  * {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  
+  body{
+      background: #000;
+      -ms-overflow-style: none;
+  }
+  
+  body::-webkit-scrollbar{
+      display: none;
+  }
+  
+  html{
+      scrollbar-width: none;
+  }
+  
+  .main {
+    background-image: -webkit-gradient(
+        linear,
+        left bottom, left top,
+        color-stop(0, rgba(0, 0, 0, 0.8)),
+        color-stop(60%, rgba(0, 0, 0, 0)),
+        to(rgba(0, 0, 0, 0.8))
+      ),
+      url(IMG/bg.jpg);
+    background-image: -o-linear-gradient(
+        bottom,
+        rgba(0, 0, 0, 0.8) 0,
+        rgba(0, 0, 0, 0) 60%,
+        rgba(0, 0, 0, 0.8) 100%
+      ),
+      url(IMG/bg.jpg);
+    background-image: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.8) 0,
+        rgba(0, 0, 0, 0) 60%,
+        rgba(0, 0, 0, 0.8) 100%
+      ),
+      url(IMG/bg.jpg);
+    height: 100vh;
+  
+    position: relative;
+    background-position: center center;
+    /* background-repeat: no-repeat; */
+    background-size: max(1000px, 100vw);
+  }
+  
+  .main .box {
+    height: 100vh;
+    width: 100%;
+    opacity: 0.44;
+    position: absolute;
+    top: 0;
+    background-color: black;
+  }
+  
+  nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 80vw;
+    margin: auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  
+  nav img {
+    position: relative;
+    height: 60px;
+    width: 135px;
+    margin-left: 18px;
+    margin-top: 10px;
+    z-index: 10;
+    /* cursor: pointer; */
+    /* color: red; */
+  }
+  
+  .main nav div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  
+  nav button {
+    position: relative;
+    z-index: 10;
+    margin-right: 20px;
+    /* border-style: solid; */
+  
+    border-radius: 3px;
+    border-color: rgba(0, 0, 0, 0);
+    font-family: myFontLight;
+    font-weight: 600;
+    color: white;
+    margin-top: 6px;
+  }
+  
+  .b1{
+    width: 112px;
+    height: 31px;
+    background-color: transparent;
+    border-color: rgba(255, 255, 255, 0.3);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 4px;
+    color: white;
+  }
+  
+  .main .b1 img, footer .bhasa .b1 img{
+    background: none;
+    size: fit;
+    width: 30%;
+    height: 60%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  
+    margin-left: auto;
+    /* margin-right: 10px;
+      padding-right: 18px;     */
+    margin-bottom: 9px;
+  }
+  
+  .main .b1 i, footer .bhasa .b1 i {
+    margin-right: 10px;
+  }
+  
+  .b2 {
+    height: 31px;
+    background-color: #e50914;
+    border-style: solid;
+    width: 71px;
+    margin-right: 36px;
+    cursor: pointer;
+  }
+  .b2:hover{
+      opacity: .9;
+  }
+  
+  .main .home {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: white;
+    height: 80%;
+    width: 100%;
+    position: relative;
+    gap: 11px;
+    z-index: 10;
+    /* top: -10px; */
+  }
+  
+  .home > :nth-child(1) {
+    font-weight: 700;
+    font-size: 3.5vw;
+    font-family: myFontBold;
+  }
+  
+  .home > :nth-child(2) {
+    font-weight: 100;
+    font-size: 1.6vw;
+    font-family: myFontLight;
+  }
+  
+  .home > :nth-child(3){
+    font-weight: 100;
+    font-size: 1.3vw;
+    font-family: myFontLight;
+    margin-top: 10px;
+  }
+  
+  .main .home .mail, .faqs .home .mail{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 8px;
+  }
+  
+  .main .home .mail input,  .faqs .home .mail input{
+    height: 3.6vw;
+    width: 25vw;
+    padding: 0px 60px 2px 12px;
+    font-size: 1.2vw;
+    font-family: myFontLight;
+    color: white;
+    background-color: rgba(23, 23, 23, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.299);
+    /* border-radius: 3px; */
+  }
+  
+  .main .home .mail button,  .faqs .home .mail button{
+    height: 3.6vw;
+    width: 210px;
+    padding: 0px 30px 0px 20px;
+    border-radius: 3px;
+    border-color: rgba(0, 0, 0, 0);
+    font-family: myFontLight;
+    font-size: 1.5vw;
+    font-weight: 500;
+    color: white;
+    background: #e50914;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 7px;
+    cursor: pointer;
+  }
+  
+  .main .home .mail button:hover{
+      opacity: .9;
+  }
+  
+  .main .home .mail img {
+      position: relative;
+      left: 10px;
+    height: 20px;
+    width: 21px;
+  }
+  
+  .separation {
+    height: 7px;
+    background-color: #232323;
+  }
+  
+  
+  .one, .two{
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      color: white;
+      margin: auto;
+      height: 83vh;
+      max-width: 75vw;
+  }
+  
+  .one>:first-child, .two .twoText{
+      text-align: left;
+      -ms-flex-item-align: center;
+          -ms-grid-row-align: center;
+          align-self: center;
+      
+  }
+  
+  .one .oneText h1, .two .twoText h1, .faqs h2{
+      font-weight: bolder;
+      font-family: myFontBold;
+      font-size: 3vw;
+      margin-bottom: 1vw;
+      color: white;
+  }
+  
+  .one .oneText span, .two .twoText span{
+      font-family: myFontLight;
+      font-size: 1.5vw;
+  }
+  
+  .one .video1{
+      max-width: 100%;
+      position: relative;
+      -ms-flex-item-align: center;
+          -ms-grid-row-align: center;
+          align-self: center;
+      
+  }
+  
+  .one .video1 img{
+      position: relative;
+      z-index: 10;
+      max-width: 40vw;
+  }
+  
+  .one .video1 video{
+      position: absolute;
+      top: 6.2vw;
+      left: 5.2vw;
+      width: 29.2vw;
+  }
+  
+  
+  .two .video2 img{
+      max-width: 37vw;
+      position: relative;
+      padding-top: 4.4vw;
+      /* padding-right: 2vw; */
+      /* margin-right: 4vw; */
+  }
+  
+  #v3{
+      width: 25.6vw;
+      left: 7vw;
+      top: 4vw;
+  }
+  
+  .faqs{
+    max-width: 100%;
+    height: 135vh;
+  }
+  
+  .faqs h2{
+    padding-top: 4.7vw;
+    text-align: center;
+    padding-bottom: 1.4vw;
+  }
+  
+  .faqs .bigBox img{
+    color: white;
+  }
+  
+  .faqs .bigBox {
+    cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-transition: all .5s ;
+    -o-transition: all .5s ;
+    transition: all .5s ;
+    background-color: #2d2d2d;
+    max-width: 75vw;
+    margin: 13px auto;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    color: white;
+    padding: 1.4vw;
+  }
+  
+  .faqs .bigBox:hover{
+    background-color: #414141;
+  }
+  
+  .faqs .bigBox span{
+    font-size: 1.6vw;
+    font-weight: 400;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: relative;
+    z-index: 10;
+  }
+  
+  .faqs .cenText{
+    color: white;
+    font-size: 1.3vw;
+    font-weight: 100;
+    font-family: myFontLight;
+    text-align: center;
+    padding-top: 2vw;
+    padding-bottom: 1vw;
+    position: relative;
+  }
+  
+  footer{
+    max-width: 75vw;
+    margin: auto;
+    height: 26.5vw;
+    opacity: 0.7;
+    color: white;
+    font-family: myFontLight;
+    font-weight: 100;
+  }
+  
+  footer .call a{
+    color: white;
+  }
+  
+  .down{
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  
+  footer .call{
+    padding-top: 4.6vw;
+    padding-bottom: 1.2vw;
+  }
+  
+  .down a{
+    font-size: 1vw;
+    color: white;
+    padding: .5vw 0;
+  }
+  
+  .down .downItems{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    /* color: white; */
+    
+  }
+  
+  footer .bhasa{
+    max-width: 19vw;
+    padding-top: 20px;
+    
+  }
+  
+  footer .bhasa .b1{
+    font-family: myFontLight;
+    width: 8vw;
+    font-size: medium;
+    border-radius: 4px;
+  }
+  
+  footer .bhasa .b1 img{
+    margin: 5px;
+  }
+  
+  footer .mainFooter{
+    color: white;
+    font-family: myFontLight;
+    font-weight: 100;
+    padding-top: 1vw;
+  }
+  
+  
+  
+  
+  
